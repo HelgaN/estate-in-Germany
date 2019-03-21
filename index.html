@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>OHDESIGN test</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/select.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preload" href="fonts/RalewayLight.woff2" as="font">
+  <link rel="preload" href="fonts/RalewayRegular.woff2" as="font">
+  <link rel="preload" href="fonts/RalewayMedium.woff2" as="font">
+  <link rel="preload" href="fonts/RalewaySemiBold.woff2" as="font">
+  <link rel="preload" href="fonts/TTCommons-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/TTNorms-Light.woff2" as="font">
+  <link rel="preload" href="fonts/TTNorms-Regular.woff2" as="font">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async></script>
+</head>
+
+<body>
+
+  <header class="page-header">
+
+    <div class="page-header__container">
+
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип EW Real Estate">
+        </a>
+      </div>
+
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="main-navigation">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">О компании</a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--sub">
+            <a class="main-navigation__link  main-navigation__link--sub" href="#">Недвижимость</a>
+            <ul class="main-navigation__submenu navigation-sub">
+              <li class="navigation-sub__item">
+                <a class="navigation-sub__link" href="#">Недвижимость1</a>
+              </li>
+              <li class="navigation-sub__item">
+                <a class="navigation-sub__link" href="#">Недвижимость2</a>
+              </li>
+              <li class="navigation-sub__item">
+                <a class="navigation-sub__link" href="#">Недвижимость3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-navigation__item main-navigation__item--sub">
+            <a class="main-navigation__link main-navigation__link--sub" href="#">Услуги</a>
+            <ul class="main-navigation__submenu navigation-sub">
+              <li class="navigation-sub__item">
+                <a class="navigation-sub__link" href="#">Услуги1</a>
+              </li>
+              <li class="navigation-sub__item">
+                <a class="navigation-sub__link" href="#">Услуги2</a>
+              </li>
+              <li class="navigation-sub__item">
+                <a class="navigation-sub__link" href="#">Услуги3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-navigation__item main-navigation__item--sub">
+            <a class="main-navigation__link main-navigation__link--sub" href="#">Инфо</a>
+            <ul class="main-navigation__submenu navigation-sub">
+              <li class="navigation-sub__item">
+                <a class="navigation-sub__link" href="#">Инфо1</a>
+              </li>
+              <li class="navigation-sub__item">
+                <a class="navigation-sub__link" href="#">Инфо2</a>
+              </li>
+              <li class="navigation-sub__item">
+                <a class="navigation-sub__link" href="#">Инфо3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Новости</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-header__wrapper">
+        <a class="page-header__button" href="#">Заявка</a>
+        <a class="page-header__phone" href="#">+49 30 889 203 99</a>
+
+        <div class="page-header__lang">
+          <a href="javascript:void(0);" class="slct">
+            <picture>
+              <img class="drop__img" src="img/rus.png" srcset="img/rus@2x.png 2x" alt="Иконка русского языка">
+            </picture>
+          </a>
+          <ul class="drop">
+            <li class="drop__item">
+              <picture>
+                <img class="drop__img" src="img/rus.png" srcset="img/rus@2x.png 2x" alt="Иконка русского языка">
+              </picture>
+            </li>
+            <li class="drop__item">
+            <picture>
+              <img class="drop__img" src="img/germ.png" srcset="img/germ@2x.png 2x" alt="Иконка немецкого языка">
+            </picture>
+            </li>
+          </ul>
+          <input type="hidden" id="select" />
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">EW Real Estate - компания по аренде недвижимости в Германии</h1>
+
+    <section class="realty">
+      <div class="realty__container">
+        <h2 class="realty__title">Недвижимость в Германии</h2>
+
+        <ul class="realty__list">
+          <li class="realty__item">
+            <a class="realty__link" href="#">Квартиры и дома</a>
+          </li>
+          <li class="realty__item">
+            <a class="realty__link" href="#">Новостройки</a>
+          </li>
+          <li class="realty__item">
+            <a class="realty__link" href="#">Коммерческая недвижимость</a>
+          </li>
+          <li class="realty__item">
+            <a class="realty__link" href="#">Доходные квартиры</a>
+          </li>
+          <li class="realty__item">
+            <a class="realty__link" href="#">Земельные участки</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="search">
+      <h2 class="visually-hidden">Поиск недвижимости в Германии</h2>
+      <form class="search__form" action="#" method="get">
+        <fieldset class="search__fieldset">
+          <legend class="search__legend">Расположение</legend>
+          <select class="search__select search__select--full" name="region">
+            <option class="search__option" value="region">Регион</option>
+            <option class="search__option" value="region1">Регион1</option>
+            <option class="search__option" value="region2">Регион2</option>
+          </select>
+
+          <div class="search__form-wrapper">
+            <select class="search__select" name="city">
+              <option class="search__option" value="city">Город</option>
+              <option class="search__option" value="city1">Значение1</option>
+              <option class="search__option" value="city2">Значение2</option>
+            </select>
+
+            <select class="search__select" name="zone">
+              <option class="search__option" value="zone">Район</option>
+              <option class="search__option" value="zone1">Район1</option>
+              <option class="search__option" value="zone2">Район2</option>
+            </select>
+          </div>
+
+        </fieldset>
+        <fieldset class="search__fieldset">
+          <legend class="search__legend">Недвижимость</legend>
+          <select class="search__select search__select--full" name="realty">
+            <option class="search__option" value="realty">Выбрать недвижимость</option>
+            <option class="search__option" value="realty1">Значение1</option>
+            <option class="search__option" value="realty2">Значение2</option>
+          </select>
+
+          <div class="search__form-wrapper">
+            <select class="search__select" name="type">
+              <option class="search__option" value="type">Тип недвижимости</option>
+              <option class="search__option" value="type1">Тип1</option>
+              <option class="search__option" value="type2">Тип2</option>
+            </select>
+
+            <select class="search__select" name="view">
+              <option class="search__option" value="view">Вид недвижимости</option>
+              <option class="search__option" value="view1">Вид1</option>
+              <option class="search__option" value="view2">Вид2</option>
+            </select>
+          </div>
+
+        </fieldset>
+        <fieldset class="search__fieldset">
+          <legend class="search__legend">Цена</legend>
+          <div class="search__form-wrapper">
+            <select class="search__select" name="min">
+              <option class="search__option" value="min">Минимальная цена</option>
+              <option class="search__option" value="10000">10000</option>
+              <option class="search__option" value="100000">100000</option>
+            </select>
+
+            <input class="search__input" type="text" name="id" placeholder="ID">
+          </div>
+          <div class="search__form-wrapper">
+            <select class="search__select" name="max">
+              <option class="search__option" value="max">Максимальная цена</option>
+              <option class="search__option" value="max1">100000</option>
+              <option class="search__option" value="max2">500000</option>
+            </select>
+
+            <button class="search__button">Поиск</button>
+          </div>
+
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="type">
+      <div class="type__container">
+        <h2 class="type__title">Жилая, элитная и доходная недвижимость в Германии</h2>
+
+        <ul class="type__list">
+          <li class="type__item type__item--apartment">
+            <a class="type__link" href="#">
+              <div class="type__item-wrapper">
+                <p class="type__text">Квартиры</p>
+                <p class="type__num">320</p>
+              </div>
+            </a>
+          </li>
+          <li class="type__item type__item--house">
+            <a class="type__link" href="#">
+              <div class="type__item-wrapper">
+                <p class="type__text">Дома</p>
+                <p class="type__num">320</p>
+              </div>
+            </a>
+          </li>
+          <li class="type__item type__item--new">
+            <a class="type__link" href="#">
+              <div class="type__item-wrapper">
+                <p class="type__text">Новостройки</p>
+                <p class="type__num">320</p>
+              </div>
+            </a>
+          </li>
+          <li class="type__item type__item--commercial">
+            <a class="type__link" href="#">
+              <div class="type__item-wrapper">
+                <p class="type__text">Коммерческая недвижимость</p>
+                <p class="type__num">320</p>
+              </div>
+            </a>
+          </li>
+          <li class="type__item type__item--profitable-app">
+            <a class="type__link" href="#">
+              <div class="type__item-wrapper">
+                <p class="type__text">Доходные квартиры</p>
+                <p class="type__num">320</p>
+              </div>
+            </a>
+          </li>
+          <li class="type__item type__item--profitable-hs">
+            <a class="type__link" href="#">
+              <div class="type__item-wrapper">
+                <p class="type__text">Доходные дома</p>
+                <p class="type__num">320</p>
+              </div>
+            </a>
+          </li>
+          <li class="type__item type__item--land">
+            <a class="type__link" href="#">
+              <div class="type__item-wrapper">
+                <p class="type__text">Земельные участки</p>
+                <p class="type__num">320</p>
+              </div>
+            </a>
+          </li>
+          <li class="type__item type__item--invest">
+            <a class="type__link" href="#">
+              <div class="type__item-wrapper">
+                <p class="type__text">Инвест-проекты</p>
+                <p class="type__num">320</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="buy">
+      <div class="buy__top">
+        <div class="buy__container">
+          <h2 class="buy__title">Как купить недвижимость в Германии</h2>
+
+          <input class="visually-hidden buy__input" type="radio" id="item-1" name="item" checked>
+          <input class="visually-hidden buy__input" type="radio" id="item-2" name="item">
+          <input class="visually-hidden buy__input" type="radio" id="item-3" name="item">
+          <input class="visually-hidden buy__input" type="radio" id="item-4" name="item">
+          <input class="visually-hidden buy__input" type="radio" id="item-5" name="item">
+          <input class="visually-hidden buy__input" type="radio" id="item-6" name="item">
+          <input class="visually-hidden buy__input" type="radio" id="item-7" name="item">
+          <input class="visually-hidden buy__input" type="radio" id="item-8" name="item">
+
+          <div class="buy__slider">
+            <ul class="buy__slider-list">
+              <li class="buy__slider-item" id="item-1-slide">
+                <div class="buy__slider-wrapper">
+                  <span class="buy__slider-num">01</span>
+                  <p class="buy__slider-title">Подписание договора о поиске объекта</p>
+                </div>
+
+                <p class="buy__slider-text">Принимая решение купить доходную недвижимость в Европе, многие профессиональные инвесторы отдают предпочтение Германии. И в этом нет ничего удивительного. Доступные цены, надежность экономики и стабильность политической ситуации в стране формируют благоприятный инвестиционный климат с возможностью просчитать развитие рынка в долгосрочной перспективе.</p>
+              </li>
+              <li class="buy__slider-item" id="item-2-slide">
+                <div class="buy__slider-wrapper">
+                  <span class="buy__slider-num">02</span>
+                  <p class="buy__slider-title">Выбор объекта</p>
+                </div>
+
+                <p class="buy__slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a convallis nisl, at aliquam dolor. Morbi in iaculis nunc. Nulla eu mi at velit imperdiet sollicitudin sed vel risus. Quisque eleifend lorem ipsum, et tempus nulla convallis nec. Duis molestie diam at molestie sodales.Morbi in iaculis nunc. Nulla eu mi at velit imperdiet sollicitudin sed vel risus.</p>
+              </li>
+              <li class="buy__slider-item" id="item-3-slide">
+                <div class="buy__slider-wrapper">
+                  <span class="buy__slider-num">03</span>
+                  <p class="buy__slider-title">Бронирование объекта и договор об оказании риэлторских услуг</p>
+                </div>
+
+                <p class="buy__slider-text">In convallis, dui in iaculis adipiscing, tortor neque elementum lectus, quis dapibus sapien metus vestibulum nibh. Curabitur fermentum molestie ipsum, a sagittis mi. Suspendisse tempus consequat odio, quis tempus augue vulputate at.Morbi in iaculis nunc. Nulla eu mi at velit imperdiet sollicitudin sed vel risus.</p>
+              </li>
+              <li class="buy__slider-item" id="item-4-slide">
+                <div class="buy__slider-wrapper">
+                  <span class="buy__slider-num">04</span>
+                  <p class="buy__slider-title">Предварительный договор купли-продажи</p>
+                </div>
+
+                <p class="buy__slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a convallis nisl, at aliquam dolor. Morbi in iaculis nunc. Nulla eu mi at velit imperdiet sollicitudin sed vel risus. Quisque eleifend lorem ipsum, et tempus nulla convallis nec. Duis molestie diam at molestie sodales.Morbi in iaculis nunc. Nulla eu mi at velit imperdiet sollicitudin sed vel risus.</p>
+              </li>
+              <li class="buy__slider-item" id="item-5-slide">
+                <div class="buy__slider-wrapper">
+                  <span class="buy__slider-num">05</span>
+                  <p class="buy__slider-title">Проверка объекта</p>
+                </div>
+
+                <p class="buy__slider-text">In convallis, dui in iaculis adipiscing, tortor neque elementum lectus, quis dapibus sapien metus vestibulum nibh. Curabitur fermentum molestie ipsum, a sagittis mi. Suspendisse tempus consequat odio, quis tempus augue vulputate at.Morbi in iaculis nunc. Nulla eu mi at velit imperdiet sollicitudin sed vel risus.</p>
+              </li>
+              <li class="buy__slider-item" id="item-6-slide">
+                <div class="buy__slider-wrapper">
+                  <span class="buy__slider-num">06</span>
+                  <p class="buy__slider-title">Подписание договора купли-продажи</p>
+                </div>
+
+                <p class="buy__slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a convallis nisl, at aliquam dolor. Morbi in iaculis nunc. Nulla eu mi at velit imperdiet sollicitudin sed vel risus. Quisque eleifend lorem ipsum, et tempus nulla convallis nec. Duis molestie diam at molestie sodales.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a convallis nisl, at aliquam dolor. Morbi in iaculis nunc. Nulla eu mi at velit imperdiet sollicitudin sed vel risus.</p>
+              </li>
+              <li class="buy__slider-item" id="item-7-slide">
+                <div class="buy__slider-wrapper">
+                  <span class="buy__slider-num">07</span>
+                  <p class="buy__slider-title">Оплата стоимости объекта</p>
+                </div>
+
+                <p class="buy__slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a convallis nisl, at aliquam dolor. Morbi in iaculis nunc. Nulla eu mi at velit imperdiet sollicitudin sed vel risus. Quisque eleifend lorem ipsum, et tempus nulla convallis nec. Duis molestie diam at molestie sodales.Morbi in iaculis nunc. Nulla eu mi at velit imperdiet sollicitudin sed vel risus.</p>
+              </li>
+              <li class="buy__slider-item" id="item-8-slide">
+                <div class="buy__slider-wrapper">
+                  <span class="buy__slider-num">08</span>
+                  <p class="buy__slider-title">Переход права собственности и регистрация нового собственника</p>
+                </div>
+
+                <p class="buy__slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a convallis nisl, at aliquam dolor. Morbi in iaculis nunc. Nulla eu mi at velit imperdiet sollicitudin sed vel risus. Quisque eleifend lorem ipsum, et tempus nulla convallis nec. Duis molestie diam at molestie sodales.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </li>
+            </ul>
+
+            <button class="buy__button buy__button--prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="40.669" viewBox="0 0 70 40.669"><defs><style>.a{fill:#5e5e5e;}</style></defs><g transform="translate(-334 -4436.165)"><path class="a" d="M1884.551,597.884,1896.435,586H1844v-7h52.435l-11.884-11.885,4.949-4.949,20.335,20.335L1889.5,602.834Z" transform="translate(-375 3874)"/><path class="a" d="M40.55,4.95,52.434,16.835H0v7H52.435L40.55,35.72,45.5,40.669,65.834,20.335,45.5,0Z" transform="translate(399.834 4476.834) rotate(180)"/></g></svg>
+            </button>
+            <button class="buy__button buy__button--next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="40.669" viewBox="0 0 70 40.669"><defs><style>.a{fill:#5e5e5e;}</style></defs><g transform="translate(-334 -4436.165)"><path class="a" d="M1884.551,597.884,1896.435,586H1844v-7h52.435l-11.884-11.885,4.949-4.949,20.335,20.335L1889.5,602.834Z" transform="translate(-375 3874)"/><path class="a" d="M40.55,4.95,52.434,16.835H0v7H52.435L40.55,35.72,45.5,40.669,65.834,20.335,45.5,0Z" transform="translate(399.834 4476.834) rotate(180)"/></g></svg>
+            </button>
+
+          </div>
+
+          <div class="buy__control-wrapper">
+            <p class="buy__control-more">Прочитать об этапах <br>покупки подробнее</p>
+            <ul class="buy__control-list">
+              <li class="buy__control-item">
+                <label class="buy__control-label" for="item-1"><span class="buy__control-num">1</span>Подписание договора о поиске объекта</label>
+              </li>
+              <li class="buy__control-item">
+                <label class="buy__control-label" for="item-2"><span class="buy__control-num">2</span>Выбор объекта</label>
+              </li>
+              <li class="buy__control-item">
+                <label class="buy__control-label" for="item-3"><span class="buy__control-num">3</span>Бронирование объекта и договор об оказании риэлторских услуг</label>
+              </li>
+              <li class="buy__control-item">
+                <label class="buy__control-label" for="item-4"><span class="buy__control-num">4</span>Предварительный договор купли-продажи</label>
+              </li>
+              <li class="buy__control-item">
+                <label class="buy__control-label" for="item-5"><span class="buy__control-num">5</span>Проверка объекта</label>
+              </li>
+              <li class="buy__control-item">
+                <label class="buy__control-label" for="item-6"><span class="buy__control-num">6</span>Подписание договора купли-продажи</label>
+              </li>
+              <li class="buy__control-item">
+                <label class="buy__control-label" for="item-7"><span class="buy__control-num">7</span>Оплата стоимости объекта</label>
+              </li>
+              <li class="buy__control-item">
+                <label class="buy__control-label" for="item-8"><span class="buy__control-num">8</span>Переход права собственности и регистрация нового собственника</label>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="buy__bottom">
+        <div class="buy__container buy__container--bottom">
+          <div class="buy__left">
+            <p class="buy__bottom-text">Принимая решение купить доходную недвижимость в Европе, многие профессиональные инвесторы отдают предпочтение Германии. И в этом нет ничего удивительного. Доступные цены, надежность экономики и стабильность политической ситуации в стране формируют благоприятный инвестиционный климат с возможностью просчитать развитие рынка в долгосрочной перспективе. Однако для человека, владеющего неполной информацией об особенностях совершения сделки, не знающего всех тонкостей нормативно-правовой базы и системы налогообложения, приобретение элитного или доходного объекта в Германии может оказаться слишком сложным и рисковым предприятием. Поэтому, если вас интересует доходная недвижимость в Германии, лучшим решением станет обращение к профессионалам.</p>
+
+            <p class="buy__left-title">Правовая информация</p>
+
+            <p class="buy__bottom-text">Разрешение на осуществление риэлтерской деятельности выдано окружным управлением Шарлоттенбург — Вильмерсдорф, город Берлин в соответствии с § 34c Промыслового Уложения.</p>
+
+            <a class="buy__bottom-link" href="#">Перейти к разделу Правовая информация</a>
+          </div>
+          <div class="buy__right">
+            <p class="buy__bottom-text">Агентство EW Real Estate имеет большой опыт оказания квалифицированной помощи в данной сфере. Это не только продажа объектов недвижимости, но и консалтинг, оформление ипотечного кредита, послепродажное обслуживание и др. В нашем каталоге размещены исключительно проверенные доходные объекты в Германии, сопровождаемые реальными фото, подробными описаниями и актуальными ценами. Изучив наш сайт, вы сможете выбрать вариант, отвечающий всем вашим требованиям самостоятельно, либо воспользоваться услугой индивидуального подбора недвижимости. Вам достаточно сообщить, какая стоимость жилья для вас предпочтительна, какой район страны вас интересует, и наши консультанты отберут для вас подходящие предложения. В дальнейшем мы обеспечим полное риэлторское сопровождение с гарантией ее конфиденциальности. О качестве и добросовестности нашей работы свидетельствуют многочисленные отзывы наших клиентов – русскоязычных граждан из стран СНГ и Балтии. С нами доходная и элитная недвижимость в Германии становится ближе, реальнее и доступнее!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__block">
+        <img class="page-footer__logo" src="img/logo.svg" alt="Логотип EW Real Estate">
+        <p class="page-footer__address">Kurfürstendamm 45 Berlin 10719</p>
+        <a class="page-footer__phone" href="#">+49 30 889-203-99</a>
+        <a class="page-footer__phone page-footer__phone--last" href="#">+49 178 519-87-28</a>
+        <a class="page-footer__contacts-link" href="#">info@ew-realestate.de</a>
+        <a class="page-footer__contacts-link" href="#">skype: east-westrealestate</a>
+        <p class="page-footer__contacts">Игорь Зиберт</p>
+      </div>
+
+      <div class="page-footer__block">
+        <p class="page-footer__block-title">Навигация</p>
+        <ul class="page-footer__block-list">
+          <li class="page-footer__block-item">
+            <a class="page-footer__block-link" href="#">Главная</a>
+          </li>
+          <li class="page-footer__iblock-tem">
+            <a class="page-footer__block-link" href="#">О компании</a>
+          </li>
+          <li class="page-footer__block-item">
+            <a class="page-footer__block-link" href="#">Информация</a>
+          </li>
+          <li class="page-footer__block-item">
+            <a class="page-footer__block-link" href="#">Новости</a>
+          </li>
+          <li class="page-footer__block-item">
+            <a class="page-footer__block-link" href="#">Контакты</a>
+          </li>
+          <li class="page-footer__block-item">
+            <a class="page-footer__block-link" href="#">Заявка online</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__block">
+        <p class="page-footer__block-title">Услуги</p>
+        <ul class="page-footer__block-list">
+          <li class="page-footer__block-item">
+            <a class="page-footer__block-link" href="#">Индивидуальный поиск и<br> продажа недвижимости</a>
+          </li>
+          <li class="page-footer__iblock-tem">
+            <a class="page-footer__block-link" href="#">Послепродажное обслуживание</a>
+          </li>
+          <li class="page-footer__block-item">
+            <a class="page-footer__block-link" href="#">Открытие счета в банке</a>
+          </li>
+          <li class="page-footer__block-item">
+            <a class="page-footer__block-link" href="#">Ипотечный кредит</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__block page-footer__block--realty">
+        <p class="page-footer__block-title">Недвижимость</p>
+        <div class="page-footer__block-wrapper">
+          <ul class="page-footer__block-list page-footer__block-list--realty">
+            <li class="page-footer__block-item">
+              <a class="page-footer__block-link" href="#">Квартиры</a>
+            </li>
+            <li class="page-footer__iblock-tem">
+              <a class="page-footer__block-link" href="#">Дома и виллы</a>
+            </li>
+            <li class="page-footer__block-item">
+              <a class="page-footer__block-link" href="#">Доходные квартиры</a>
+            </li>
+            <li class="page-footer__block-item">
+              <a class="page-footer__block-link" href="#">Доходные дома</a>
+            </li>
+          </ul>
+
+          <ul class="page-footer__block-list page-footer__block-list--realty">
+            <li class="page-footer__block-item">
+              <a class="page-footer__block-link" href="#">Коммерческая недвижимость</a>
+            </li>
+            <li class="page-footer__iblock-tem">
+              <a class="page-footer__block-link" href="#">Новостройки</a>
+            </li>
+            <li class="page-footer__block-item">
+              <a class="page-footer__block-link" href="#">Земля</a>
+            </li>
+            <li class="page-footer__block-item">
+              <a class="page-footer__block-link" href="#">Инвестиции</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-footer__block">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="28.054" viewBox="0 0 16 28.054"><path fill="#323233" d="M721,3732l-4.4-.053c-4.607,0-7.584,2.994-7.584,7.627L709,3743h-4v6h4v11h6v-11h5l1-6h-6v-3c0-1.433.1-2,2-2h4Z" transform="translate(-705 -3731.945)"/></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="32.222" height="25.958" viewBox="0 0 32.222 25.958"><path fill="#323233" d="M799.222,3736.2a13.311,13.311,0,0,1-3.8,1.032,6.585,6.585,0,0,0,2.907-3.626,13.314,13.314,0,0,1-4.2,1.59,6.626,6.626,0,0,0-11.436,4.483,6.535,6.535,0,0,0,.171,1.494,18.826,18.826,0,0,1-13.626-6.847,6.522,6.522,0,0,0,2.046,8.748,6.618,6.618,0,0,1-2.994-.819c0,.028,0,.055,0,.083a6.572,6.572,0,0,0,5.3,6.426,6.662,6.662,0,0,1-2.986.112,6.61,6.61,0,0,0,6.175,4.551,13.335,13.335,0,0,1-8.21,2.806,13.505,13.505,0,0,1-1.577-.092,18.827,18.827,0,0,0,10.134,2.945,18.594,18.594,0,0,0,18.809-18.645q0-.427-.019-.848A13.375,13.375,0,0,0,799.222,3736.2Z" transform="translate(-767 -3733.124)"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js">
+  </script>
+
+  <script src="js/select.js">
+  </script>
+
+  <script src="js/menu.js">
+  </script>
+
+  <script src="js/slider.js">
+
+  </script>
+
+</body>
+
+</html>
